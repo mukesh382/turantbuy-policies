@@ -9,9 +9,7 @@
         *{box-sizing:border-box;margin:0;padding:0}
         :root{--teal:#027368;--teal-dark:#015a52;--teal-light:#e6f4f2;--text:#1a1a1a;--muted:#666;--border:#e8e8e8;--bg:#f7f9f8}
         body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
-        main{max-width:800px;margin:0 auto;padding:24px 20px 60px}
-        h1{font-family:'Playfair Display',serif;font-size:24px;color:var(--teal-dark);margin-bottom:8px}
-        .subtitle{color:var(--muted);font-size:14.5px;margin-bottom:24px}
+        main{max-width:800px;margin:0 auto;padding:4px 16px 32px}
         .card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 1px 6px rgba(0,0,0,0.06)}
         .qa{border-bottom:1px solid #f0f0f0}
         .qa:last-child{border-bottom:none}
@@ -21,14 +19,16 @@
         .qa[open] summary{color:var(--teal-dark)}
         .qa[open] summary::after{content:'\2212'}
         .qa p{padding:0 22px 20px;color:var(--muted);font-size:14px}
-        footer{text-align:center;color:var(--muted);font-size:13px;margin-top:24px}
+        .office{background:#fff;border-radius:16px;box-shadow:0 1px 6px rgba(0,0,0,0.06);padding:20px 22px;margin-top:16px}
+        .office h2{font-family:'Playfair Display',serif;font-size:16px;color:var(--teal-dark);margin-bottom:10px}
+        .office p{font-size:14px;color:var(--text);line-height:1.6}
+        .office .rows{margin-top:14px;padding-top:14px;border-top:1px solid #f0f0f0}
+        .office a{display:block;color:var(--teal-dark);text-decoration:none;font-weight:500;font-size:14px;padding:4px 0}
+        footer{text-align:center;color:var(--muted);font-size:13px;margin-top:20px}
     </style>
 </head>
 <body>
 <main>
-    <h1>Help &amp; support</h1>
-    <p class="subtitle">Answers to the questions we hear most, and a direct line to our team.</p>
-
     <div class="card">
         <details class="qa">
             <summary>Why do the products change when I change my address?</summary>
@@ -76,7 +76,12 @@
         </details>
     </div>
 
-    <footer>Still stuck? Use the contact details below this page in the app.</footer>
+    <section class="office">
+        <h2>Head office</h2>
+        <p>TurantBuy Office, Main Bus Stand, Harjanpura (via Kanwat),<br>Neem Ka Thana, Sikar, Rajasthan</p>
+    </section>
+
+    <footer>We usually reply the same day.</footer>
 </main>
 </body>
 </html>
