@@ -3,182 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Help &amp; Support — TurantBuy</title>
+    <title>Help &amp; Support &mdash; TurantBuy</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         *{box-sizing:border-box;margin:0;padding:0}
         :root{--teal:#027368;--teal-dark:#015a52;--teal-light:#e6f4f2;--text:#1a1a1a;--muted:#666;--border:#e8e8e8;--bg:#f7f9f8}
         body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
-        main{max-width:800px;margin:0 auto;padding:20px 20px 60px}
-        .manager-card{background:#fff;border-radius:16px;padding:24px;box-shadow:0 1px 6px rgba(0,0,0,0.06);margin-bottom:24px;text-align:center}
-        .manager-image{width:100px;height:100px;border-radius:50%;object-fit:cover;margin:0 auto 16px;border:3px solid var(--teal);display:block;background:var(--teal-light)}
-        .manager-name{font-family:'Playfair Display',serif;font-size:20px;color:var(--teal-dark);margin-bottom:4px}
-        .manager-title{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:12px}
-        .manager-contact{margin:16px 0;padding:12px;background:var(--teal-light);border-radius:8px}
-        .manager-contact a{color:var(--teal-dark);text-decoration:none;font-weight:600}
-        .manager-address{font-size:13px;color:var(--muted);margin-top:12px;padding-top:12px;border-top:1px solid var(--border)}
-        .subtitle{color:var(--muted);font-size:14.5px;margin-bottom:24px;line-height:1.6}
-        .card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 1px 6px rgba(0,0,0,0.06);margin-bottom:16px}
-        .contact-item{display:flex;align-items:center;gap:16px;padding:20px 24px;border-bottom:1px solid #f5f5f5;text-decoration:none;color:inherit;transition:background 0.2s}
-        .contact-item:hover{background:#f9f9f9}
-        .contact-item:last-child{border-bottom:none}
-        .contact-icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0}
-        .ci-blue{background:#e3f2fd}
-        .ci-green{background:#e8f5e9}
-        .ci-yellow{background:#fff8e1}
-        .contact-info{flex:1}
-        .contact-title{font-weight:600;font-size:15px;color:var(--text)}
-        .contact-sub{font-size:13px;color:var(--muted);margin-top:2px}
-        .arrow{color:#ccc;font-size:16px}
-        .tips-card{background:#fff;border-radius:16px;padding:24px;box-shadow:0 1px 6px rgba(0,0,0,0.06)}
-        .tips-title{font-family:'Playfair Display',serif;font-size:18px;color:var(--teal-dark);margin-bottom:14px}
-        ul{list-style:none;padding:0}
-        ul li{padding:8px 0 8px 20px;position:relative;color:var(--muted);font-size:14px;border-bottom:1px solid #f5f5f5}
-        ul li:last-child{border-bottom:none}
-        ul li::before{content:'•';position:absolute;left:0;top:0;color:var(--teal);font-weight:bold}
-        footer{background:var(--teal-dark);color:rgba(255,255,255,0.6);text-align:center;padding:20px;font-size:13px}
-        footer a{color:rgba(255,255,255,0.85);text-decoration:none}
+        main{max-width:800px;margin:0 auto;padding:24px 20px 60px}
+        h1{font-family:'Playfair Display',serif;font-size:24px;color:var(--teal-dark);margin-bottom:8px}
+        .subtitle{color:var(--muted);font-size:14.5px;margin-bottom:24px}
+        .card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 1px 6px rgba(0,0,0,0.06)}
+        .qa{border-bottom:1px solid #f0f0f0}
+        .qa:last-child{border-bottom:none}
+        .qa summary{list-style:none;cursor:pointer;padding:18px 48px 18px 22px;font-weight:500;font-size:15px;position:relative}
+        .qa summary::-webkit-details-marker{display:none}
+        .qa summary::after{content:'+';position:absolute;right:22px;top:50%;transform:translateY(-50%);color:var(--teal);font-size:20px;font-weight:400}
+        .qa[open] summary{color:var(--teal-dark)}
+        .qa[open] summary::after{content:'\2212'}
+        .qa p{padding:0 22px 20px;color:var(--muted);font-size:14px}
+        footer{text-align:center;color:var(--muted);font-size:13px;margin-top:28px}
     </style>
 </head>
 <body>
 <main>
-    <!-- Store Manager Card -->
-    <div class="manager-card">
-        <h2 style="font-family:'Playfair Display',serif;font-size:16px;color:var(--teal-dark);margin-bottom:16px;text-transform:uppercase;letter-spacing:0.05em">Store Manager</h2>
-        <img id="manager-image" class="manager-image" alt="Manager">
-        <div class="manager-name" id="manager-name">Manager Name</div>
-        <div class="manager-title">Store Manager</div>
-        <div class="manager-contact">
-            <div>
-                <a id="manager-call" href="tel:+918890484141">📞 Call</a>
-                <span style="color:#ccc"> | </span>
-                <a id="manager-whatsapp" href="https://wa.me/918890484141">💬 WhatsApp</a>
-            </div>
-        </div>
-        <div class="manager-address">
-            📍 <span id="manager-address">Store Address</span>
-        </div>
-    </div>
-    <p class="subtitle">Kuch bhi poochhna ho to store manager se seedha baat karo — call, WhatsApp ya email, jo aapko theek lage.</p>
-    <div class="card">
-        <a class="contact-item" id="email-link" href="mailto:help.turantbuy@gmail.com">
-            <div class="contact-icon ci-blue">📧</div>
-            <div class="contact-info">
-                <div class="contact-title">Email</div>
-                <div class="contact-sub" id="email-sub">help.turantbuy@gmail.com · Reply within 24 hours</div>
-            </div>
-            <span class="arrow">›</span>
-        </a>
-        <a class="contact-item" id="whatsapp-link" href="https://wa.me/918890484141">
-            <div class="contact-icon ci-green">💬</div>
-            <div class="contact-info">
-                <div class="contact-title">WhatsApp</div>
-                <div class="contact-sub" id="whatsapp-sub">+91 88904 84141 · Mon–Sat, 9AM–9PM</div>
-            </div>
-            <span class="arrow">›</span>
-        </a>
-        <a class="contact-item" id="call-link" href="tel:+918890484141">
-            <div class="contact-icon ci-yellow">📞</div>
-            <div class="contact-info">
-                <div class="contact-title">Call</div>
-                <div class="contact-sub" id="call-sub">+91 88904 84141 · Mon–Sat, 9AM–9PM</div>
-            </div>
-            <span class="arrow">›</span>
-        </a>
-    </div>
-    <div class="tips-card">
-        <div class="tips-title">Jaldi madad ke liye</div>
-        <ul>
-            <li>Order se judi baat ho to Order ID zaroor bhejein</li>
-            <li>Saaman kharaab ya kam nikla ho to photo bhej dein</li>
-            <li>Refund return pickup ke 3–5 kaam ke din mein aata hai</li>
-            <li>Account ki dikkat ho to registered mobile number batayein</li>
-            <li>Return karna ho to delivery ke 24 ghante ke andar batayein</li>
-        </ul>
-    </div>
-</main>
-<footer>© 2026 TurantBuy. All rights reserved. · <a href="mailto:help.turantbuy@gmail.com">help.turantbuy@gmail.com</a></footer>
-<script>
-    // ⚠️ Manager ki photo ke liye inline SVG.
-    //
-    // Pehle yahan via.placeholder.com tha — wo service band ho chuki hai,
-    // isliye har manager ki jagah tooti hui image dikhti thi. Ye SVG data-URI
-    // hai: koi network call nahi, kabhi fail nahi hoga.
-    const AVATAR = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%23e6f4f2' width='100' height='100'/%3E%3Ccircle cx='50' cy='38' r='16' fill='%23027368'/%3E%3Cpath d='M20 88c0-17 13-28 30-28s30 11 30 28z' fill='%23027368'/%3E%3C/svg%3E";
+    <h1>Help &amp; support</h1>
+    <p class="subtitle">Answers to the questions we hear most, and a direct line to our team.</p>
 
-    // ⚠️ Keys HAMESHA chhote akshar mein rakhein.
-    //
-    // D1 mein storeId 'Harjanpura01' hai (badi H se), aur app URL mein wahi
-    // bhejti hai. Lookup se pehle neeche toLowerCase() lagta hai, isliye
-    // yahan ki keys chhoti honi chahiye — warna store match hi nahi karega
-    // aur har store par pehla wala manager dikhega.
-    //
-    // ⚠️ store2 / store3 abhi NAKLI data hain — naam, number aur pata sab
-    // placeholder. Naya store chaalu karne se PEHLE inhe asli value se
-    // bharna zaroori hai, warna customer galat number par phone karega.
-    const storeContacts = {
-        'harjanpura01': {
-            storeName: 'Harjanpura Store',
-            address: 'Harjanpura, Teh. Neem Ka Thana, Dist. Sikar, Rajasthan',
-            manager: {
-                name: 'Store Manager',
-                phone: '+91 88904 84141',
-                phoneClean: '918890484141',
-                email: 'help.turantbuy@gmail.com',
-                whatsapp: '918890484141',
-                profileImage: AVATAR
-            }
-        },
-        'store2': {
-            storeName: 'Store 2',
-            address: 'Store 2 Address, City',
-            manager: {
-                name: 'Manager Name 2',
-                phone: '+91 88904 84141',
-                phoneClean: '918890484141',
-                email: 'help.turantbuy@gmail.com',
-                whatsapp: '918890484141',
-                profileImage: AVATAR
-            }
-        },
-        'store3': {
-            storeName: 'Store 3',
-            address: 'Store 3 Address, City',
-            manager: {
-                name: 'Manager Name 3',
-                phone: '+91 88904 84141',
-                phoneClean: '918890484141',
-                email: 'help.turantbuy@gmail.com',
-                whatsapp: '918890484141',
-                profileImage: AVATAR
-            }
-        }
-    };
-    function getStoreId() {
-        const params = new URLSearchParams(window.location.search);
-        // ⚠️ toLowerCase — dekho upar wala comment
-        return (params.get('store') || 'harjanpura01').trim().toLowerCase();
-    }
-    function updateStoreInfo() {
-        const storeId = getStoreId();
-        const storeData = storeContacts[storeId] || storeContacts['harjanpura01'];
-        const manager = storeData.manager;
-        document.getElementById('manager-name').textContent = manager.name;
-        document.getElementById('manager-image').src = manager.profileImage;
-        document.getElementById('manager-address').textContent = storeData.address;
-        // ⚠️ tel: aur wa.me ke liye SAAF number chahiye — dashes wala nahi.
-        // Pehle yahan manager.phone (dashes ke saath) jaata tha, jisse kuch
-        // phone dialer link nahi kholte the.
-        document.getElementById('manager-call').href = `tel:+${manager.phoneClean}`;
-        document.getElementById('manager-whatsapp').href = `https://wa.me/${manager.whatsapp}`;
-        document.getElementById('email-link').href = `mailto:${manager.email}`;
-        document.getElementById('email-sub').textContent = `${manager.email} · Reply within 24 hours`;
-        document.getElementById('whatsapp-link').href = `https://wa.me/${manager.whatsapp}`;
-        document.getElementById('whatsapp-sub').textContent = `${manager.phone} · Mon–Sat, 9AM–9PM`;
-        document.getElementById('call-link').href = `tel:+${manager.phoneClean}`;
-        document.getElementById('call-sub').textContent = `${manager.phone} · Mon–Sat, 9AM–9PM`;
-    }
-    updateStoreInfo();
-</script>
+    <div class="card">
+        <details class="qa">
+            <summary>Why do the products change when I change my address?</summary>
+            <p>Turant Buy only shows what sellers near your delivery address can actually deliver to you. When you change the address, we check which sellers cover it and reload their products, prices and stock.</p>
+        </details>
+        <details class="qa">
+            <summary>Why is an item showing as unavailable?</summary>
+            <p>Stock belongs to one specific seller. An item becomes unavailable if that seller runs out, goes offline, or no longer covers your delivery address. It stays in your cart so you do not lose it - remove or replace it to continue to checkout.</p>
+        </details>
+        <details class="qa">
+            <summary>I ordered from more than one seller. Why did I get several order IDs?</summary>
+            <p>Each seller packs and delivers their own items, so every seller gets a separate order with its own order ID, delivery fee and delivery code. You can track and cancel each one on its own.</p>
+        </details>
+        <details class="qa">
+            <summary>How are delivery and platform fees calculated?</summary>
+            <p>Delivery is charged per seller at that seller rate, and becomes free once your subtotal with that seller crosses their free-delivery limit. The platform fee is a flat charge per seller in your order.</p>
+        </details>
+        <details class="qa">
+            <summary>What is the delivery code?</summary>
+            <p>Every order shows a code in the app. Share it with the delivery partner only when your items are in your hands - it is what confirms the delivery was completed.</p>
+        </details>
+        <details class="qa">
+            <summary>Can I cancel an order?</summary>
+            <p>Yes. Open My orders, select the order and choose Help, any time before it is delivered. The stock goes straight back to the seller. Once an order is delivered it can no longer be cancelled.</p>
+        </details>
+        <details class="qa">
+            <summary>The amount changed between my cart and the payment screen. Why?</summary>
+            <p>Prices and stock are confirmed with the seller once more just before payment. If anything changed in the meantime, we show you the new amount first - you are never charged on a stale price.</p>
+        </details>
+        <details class="qa">
+            <summary>How do I add or change my delivery address?</summary>
+            <p>Tap your address at the top of the home screen, then pick a saved address or add a new one. You can drop a pin on the map so the delivery partner finds you easily.</p>
+        </details>
+        <details class="qa">
+            <summary>Do you deliver to my area?</summary>
+            <p>Add your address and the app tells you right away. If no seller covers it yet, the home screen will say so and you can try another address.</p>
+        </details>
+        <details class="qa">
+            <summary>How do I delete my account?</summary>
+            <p>Open Profile and choose Delete account at the bottom. We send a code to your registered number to confirm it is you. Your name, phone number and saved addresses are deleted permanently. Past orders stay with the sellers for their records but are no longer linked to you. You cannot delete your account while an order is still in progress.</p>
+        </details>
+        <details class="qa">
+            <summary>I need help with one specific order.</summary>
+            <p>Open My orders, select that order and choose Help. The options you see depend on where the order has reached.</p>
+        </details>
+    </div>
+
+    <footer>Still stuck? Go back and use Call or WhatsApp on the Help screen.</footer>
+</main>
 </body>
 </html>
