@@ -3,60 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TurantBuy brings the shops in your town to your phone — groceries, fashion, beauty, food and books, delivered from sellers near you.">
+    <meta name="theme-color" content="#027368">
     <title>About Us — TurantBuy</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
     <style>
         *{box-sizing:border-box;margin:0;padding:0}
-        :root{--teal:#027368;--teal-dark:#015a52;--teal-light:#e6f4f2;--text:#1a1a1a;--muted:#666;--border:#e8e8e8;--bg:#f7f9f8}
-        body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
-        main{max-width:800px;margin:0 auto;padding:20px 20px 60px}
-        .hero{background:var(--teal);border-radius:20px;padding:40px 28px;text-align:center;margin-bottom:20px}
-        .hero-name{font-family:'Playfair Display',serif;font-size:42px;color:#fff;letter-spacing:0.04em}
-        .hero-tagline{color:rgba(255,255,255,0.8);font-size:15px;margin-top:6px}
-        .card{background:#fff;border-radius:16px;padding:24px;box-shadow:0 1px 6px rgba(0,0,0,0.06);margin-bottom:16px}
-        .card h2{font-family:'Playfair Display',serif;font-size:18px;color:var(--teal-dark);margin-bottom:12px}
-        p{color:var(--muted);font-size:14.5px;margin-bottom:10px;line-height:1.7}
-        p:last-child{margin-bottom:0}
-        ul{list-style:none;padding:0}
-        ul li{padding:8px 0 8px 20px;position:relative;color:var(--muted);font-size:14.5px;border-bottom:1px solid #f5f5f5}
+        :root{--teal:#027368;--teal-dark:#015a52;--text:#1a1a1a;--muted:#555;--bg:#f7f9f8}
+        body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;-webkit-text-size-adjust:100%}
+        main{max-width:800px;margin:0 auto;padding:20px 16px 48px}
+        .hero{background:var(--teal);border-radius:20px;padding:40px 24px;text-align:center;margin-bottom:20px}
+        .hero-name{font-family:'Playfair Display',serif;font-size:clamp(32px,9vw,42px);color:#fff;letter-spacing:0.04em;line-height:1.2}
+        .hero-tagline{color:rgba(255,255,255,0.85);font-size:15px;margin-top:8px}
+        .card{background:#fff;border-radius:16px;padding:24px 20px;box-shadow:0 1px 6px rgba(0,0,0,0.06);margin-bottom:16px}
+        .card h2{font-family:'Playfair Display',serif;font-size:19px;color:var(--teal-dark);margin-bottom:12px}
+        .card p{color:var(--muted);font-size:15px;margin-bottom:10px}
+        .card p:last-child{margin-bottom:0}
+        ul{list-style:none}
+        ul li{padding:8px 0 8px 20px;position:relative;color:var(--muted);font-size:15px;border-bottom:1px solid #f2f2f2}
         ul li:last-child{border-bottom:none}
-        ul li::before{content:'';position:absolute;left:0;top:17px;width:7px;height:7px;border-radius:50%;background:var(--teal)}
-        footer{background:var(--teal-dark);color:rgba(255,255,255,0.6);text-align:center;padding:20px;font-size:13px}
-        footer a{color:rgba(255,255,255,0.85);text-decoration:none}
+        ul li::before{content:'';position:absolute;left:0;top:18px;width:7px;height:7px;border-radius:50%;background:var(--teal)}
+        .contact{display:flex;align-items:flex-start;gap:10px}
+        .contact span[aria-hidden]{flex:none}
+        .contact a{color:var(--teal-dark);text-decoration:none;font-weight:500;word-break:break-word}
+        footer{background:var(--teal-dark);color:rgba(255,255,255,0.7);text-align:center;padding:20px 16px;font-size:13px}
+        footer a{color:#fff;text-decoration:none}
     </style>
 </head>
 <body>
 <main>
-    <div class="hero">
-        <div class="hero-name">TurantBuy</div>
-        <div class="hero-tagline">Aapke shehar ki dukaanein, aapke phone par</div>
-    </div>
-    <div class="card">
-        <h2>Hum kaun hain</h2>
-        <p>TurantBuy aapke apne mohalle ki dukaanon ko aapke phone par le aata hai. Grocery aur sabzi se lekar kapde, joote, kitaabein, stationery aur ghar ka saara saaman — jo aapki local dukaan par milta hai, wo yahan se mangwa sakte hain.</p>
-        <p>Saaman kisi door ke godaam se nahi, aapke hi ilaake ki dukaan se uthta hai aur usi dukaan ka aadmi aapke darwaze tak pahunchata hai.</p>
-    </div>
-    <div class="card">
-        <h2>Hamara maqsad</h2>
-        <p>Bazaar jaane ka waqt bachana. Wahi dukaan, wahi bharosa, bina lambi line aur bina dhoop mein chalne ke — bas kuch tap mein.</p>
-    </div>
-    <div class="card">
-        <h2>TurantBuy hi kyun</h2>
+    <header class="hero">
+        <h1 class="hero-name">TurantBuy</h1>
+        <p class="hero-tagline">The shops in your town, on your phone</p>
+    </header>
+
+    <section class="card">
+        <h2>Who we are</h2>
+        <p>TurantBuy brings the shops in your own neighbourhood to your phone. From groceries and vegetables to fashion, beauty products, food and books — what your local shops sell, you can order right here.</p>
+        <p>Your order doesn't come from a distant warehouse. It is packed by a shop in your area and delivered to your door.</p>
+    </section>
+
+    <section class="card">
+        <h2>Our mission</h2>
+        <p>To save you the trip to the market. The same shops you already trust — without the queues or the walk in the sun. Just a few taps.</p>
+    </section>
+
+    <section class="card">
+        <h2>Why TurantBuy</h2>
         <ul>
-            <li>Grocery, fashion, food, books — sab ek hi app mein</li>
-            <li>Daam aur stock seedha dukaan se, isliye jo dikhta hai wahi milta hai</li>
-            <li>Saaf daam — koi chhupa hua charge nahi</li>
-            <li>Usi din delivery, aapke hi ilaake se</li>
-            <li>Order kis haal mein hai, app mein live dikhta hai</li>
-            <li>Cash on delivery — kuch pehle dena nahi padta</li>
+            <li>Groceries, fashion, beauty, food and books — all in one app</li>
+            <li>Prices and stock come straight from the shop and are checked again when you place your order</li>
+            <li>Transparent pricing — delivery and platform charges are shown before you order</li>
+            <li>Fast delivery from sellers near you, with the expected delivery time shown on every product</li>
+            <li>Track your order status live in the app</li>
+            <li>Cash on delivery — nothing to pay in advance</li>
         </ul>
-    </div>
-    <div class="card">
-        <h2>Sampark</h2>
-        <p>📧 help.turantbuy@gmail.com</p>
-        <p>📱 +91 88904 84141</p>
-        <p>📍 Harjanpura, Teh. Neem Ka Thana, Dist. Sikar, Rajasthan, India</p>
-    </div>
+    </section>
+
+    <section class="card">
+        <h2>Contact us</h2>
+        <p class="contact"><span aria-hidden="true">📧</span><a href="mailto:help.turantbuy@gmail.com">help.turantbuy@gmail.com</a></p>
+        <p class="contact"><span aria-hidden="true">📱</span><a href="tel:+918890484141">+91 88904 84141</a></p>
+        <p class="contact"><span aria-hidden="true">📍</span><span>Harjanpura, Teh. Neem Ka Thana, Dist. Sikar, Rajasthan, India</span></p>
+    </section>
 </main>
 <footer>© 2026 TurantBuy. All rights reserved. · <a href="mailto:help.turantbuy@gmail.com">help.turantbuy@gmail.com</a></footer>
 </body>
