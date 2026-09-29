@@ -3,60 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Answers to common questions about TurantBuy orders, delivery, fees, cancellations and your account.">
+    <meta name="theme-color" content="#027368">
     <title>Help &amp; Support &mdash; TurantBuy</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
     <style>
         *{box-sizing:border-box;margin:0;padding:0}
-        :root{--teal:#027368;--teal-dark:#015a52;--teal-light:#e6f4f2;--text:#1a1a1a;--muted:#666;--border:#e8e8e8;--bg:#f7f9f8}
-        body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
-        main{max-width:800px;margin:0 auto;padding:4px 16px 32px}
+        :root{--teal:#027368;--teal-dark:#015a52;--text:#1a1a1a;--muted:#555;--bg:#f7f9f8}
+        body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;-webkit-text-size-adjust:100%}
+        main{max-width:800px;margin:0 auto;padding:12px 16px 32px}
+        h1{font-family:'Playfair Display',serif;font-size:22px;color:var(--teal-dark);margin:4px 4px 14px}
         .card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 1px 6px rgba(0,0,0,0.06)}
         .qa{border-bottom:1px solid #f0f0f0}
         .qa:last-child{border-bottom:none}
-        .qa summary{list-style:none;cursor:pointer;padding:18px 48px 18px 22px;font-weight:500;font-size:15px;position:relative}
+        .qa summary{list-style:none;cursor:pointer;padding:18px 48px 18px 20px;font-weight:500;font-size:15px;position:relative}
         .qa summary::-webkit-details-marker{display:none}
-        .qa summary::after{content:'+';position:absolute;right:22px;top:50%;transform:translateY(-50%);color:var(--teal);font-size:20px;font-weight:400}
+        .qa summary:focus-visible{outline:2px solid var(--teal);outline-offset:-2px}
+        .qa summary::after{content:'+';position:absolute;right:20px;top:50%;transform:translateY(-50%);color:var(--teal);font-size:20px;font-weight:400}
         .qa[open] summary{color:var(--teal-dark)}
         .qa[open] summary::after{content:'\2212'}
-        .qa p{padding:0 22px 20px;color:var(--muted);font-size:14px}
-        .office{background:#fff;border-radius:16px;box-shadow:0 1px 6px rgba(0,0,0,0.06);padding:20px 22px;margin-top:16px}
-        .office h2{font-family:'Playfair Display',serif;font-size:16px;color:var(--teal-dark);margin-bottom:10px}
-        .office p{font-size:14px;color:var(--text);line-height:1.6}
+        .qa p{padding:0 20px 20px;color:var(--muted);font-size:14.5px}
+        .office{background:#fff;border-radius:16px;box-shadow:0 1px 6px rgba(0,0,0,0.06);padding:20px;margin-top:16px}
+        .office h2{font-family:'Playfair Display',serif;font-size:17px;color:var(--teal-dark);margin-bottom:10px}
+        .office p{font-size:14.5px;color:var(--text);line-height:1.6}
         .office .rows{margin-top:14px;padding-top:14px;border-top:1px solid #f0f0f0}
-        .office a{display:block;color:var(--teal-dark);text-decoration:none;font-weight:500;font-size:14px;padding:4px 0}
+        .office a{display:block;color:var(--teal-dark);text-decoration:none;font-weight:500;font-size:14.5px;padding:6px 0;word-break:break-word}
         footer{text-align:center;color:var(--muted);font-size:13px;margin-top:20px}
     </style>
 </head>
 <body>
 <main>
+    <h1>Help &amp; Support</h1>
+
     <div class="card">
         <details class="qa">
             <summary>Why do the products change when I change my address?</summary>
-            <p>Turant Buy only shows what sellers near your delivery address can actually deliver to you. When you change the address, we check which sellers cover it and reload their products, prices and stock.</p>
+            <p>TurantBuy only shows what sellers near your delivery address can actually deliver to you. When you change your address, we check which sellers cover it and reload their products, prices and stock.</p>
         </details>
         <details class="qa">
             <summary>Why is an item showing as unavailable?</summary>
-            <p>Stock belongs to one specific seller. An item becomes unavailable if that seller runs out, goes offline, or no longer covers your delivery address. It stays in your cart so you do not lose it - remove or replace it to continue to checkout.</p>
+            <p>Stock belongs to one specific seller. An item becomes unavailable if that seller runs out, goes offline or closes for the day, or no longer covers your delivery address. It stays in your cart so you don't lose it &mdash; remove or replace it to continue to checkout.</p>
         </details>
         <details class="qa">
             <summary>I ordered from more than one seller. Why did I get several order IDs?</summary>
-            <p>Each seller packs and delivers their own items, so every seller gets a separate order with its own order ID, delivery fee and delivery code. You can track and cancel each one on its own.</p>
+            <p>Each seller packs and delivers their own items, so every seller gets a separate order with its own order ID, delivery fee and delivery code. You can track and cancel each one separately.</p>
         </details>
         <details class="qa">
             <summary>How are delivery and platform fees calculated?</summary>
-            <p>Delivery is charged per seller at that seller rate, and becomes free once your subtotal with that seller crosses their free-delivery limit. The platform fee is a flat charge per seller in your order.</p>
+            <p>Delivery is charged per seller at that seller's rate, and becomes free once your subtotal with that seller reaches their free-delivery limit. The platform fee is a small flat charge for each seller in your order. All fees are shown before you place the order.</p>
         </details>
         <details class="qa">
             <summary>What is the delivery code?</summary>
-            <p>Every order shows a code in the app. Share it with the delivery partner only when your items are in your hands - it is what confirms the delivery was completed.</p>
+            <p>Every order shows a code in the app. Share it with the delivery partner only once your items are in your hands &mdash; it confirms the delivery was completed.</p>
         </details>
         <details class="qa">
             <summary>Can I cancel an order?</summary>
-            <p>Yes. Open My orders, select the order and choose Help, any time before it is delivered. The stock goes straight back to the seller. Once an order is delivered it can no longer be cancelled.</p>
+            <p>Yes, until the delivery partner picks it up. Open My orders, select the order and choose Help. The stock goes straight back to the seller. Once the order has been picked up for delivery, it can no longer be cancelled.</p>
         </details>
         <details class="qa">
-            <summary>The amount changed between my cart and the payment screen. Why?</summary>
-            <p>Prices and stock are confirmed with the seller once more just before payment. If anything changed in the meantime, we show you the new amount first - you are never charged on a stale price.</p>
+            <summary>The amount changed before I placed my order. Why?</summary>
+            <p>Prices and stock are confirmed with the seller once more just before your order is placed. If anything changed in the meantime, we show you the new amount first &mdash; you are never charged an outdated price.</p>
+        </details>
+        <details class="qa">
+            <summary>How do I pay?</summary>
+            <p>Orders are paid by cash on delivery. You don't pay anything in advance &mdash; pay the delivery partner when your order arrives.</p>
         </details>
         <details class="qa">
             <summary>How do I add or change my delivery address?</summary>
@@ -68,20 +78,21 @@
         </details>
         <details class="qa">
             <summary>How do I delete my account?</summary>
-            <p>Open Profile and choose Delete account at the bottom. We send a code to your registered number to confirm it is you. Your name, phone number and saved addresses are deleted permanently. Past orders stay with the sellers for their records but are no longer linked to you. You cannot delete your account while an order is still in progress.</p>
+            <p>Open Profile and choose Delete account at the bottom. We send a code to your registered number to confirm it's you. Your name, phone number and saved addresses are deleted permanently. Past orders stay with the sellers for their records but are no longer linked to you. You can't delete your account while an order is still in progress.</p>
         </details>
         <details class="qa">
-            <summary>I need help with one specific order.</summary>
-            <p>Open My orders, select that order and choose Help. The options you see depend on where the order has reached.</p>
+            <summary>I need help with a specific order.</summary>
+            <p>Open My orders, select that order and choose Help. The options you see depend on how far the order has progressed.</p>
         </details>
     </div>
 
     <section class="office">
-        <h2>Head office</h2>
-        <p>TurantBuy Office, Main Bus Stand, Harjanpura (via Kanwat),<br>Neem Ka Thana, Sikar, Rajasthan</p>
+        <h2>Contact us</h2>
+        <p>TurantBuy Office, Main Bus Stand, Harjanpura (via Kanwat),<br>Neem Ka Thana, Sikar, Rajasthan, India</p>
         <div class="rows">
             <a href="tel:+918890484141">Call &nbsp;+91 88904 84141</a>
             <a href="https://wa.me/918890484141">WhatsApp &nbsp;+91 88904 84141</a>
+            <a href="mailto:help.turantbuy@gmail.com">Email &nbsp;help.turantbuy@gmail.com</a>
         </div>
     </section>
 
