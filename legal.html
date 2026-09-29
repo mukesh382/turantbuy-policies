@@ -3,325 +3,295 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TurantBuy return, delivery and cancellation policies, terms and conditions, disclaimer and dispute resolution.">
+    <meta name="theme-color" content="#027368">
     <title>Legal Policies — TurantBuy</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         *{box-sizing:border-box;margin:0;padding:0}
-        :root{--teal:#027368;--teal-dark:#015a52;--teal-light:#e6f4f2;--text:#1a1a1a;--muted:#666;--border:#e8e8e8;--bg:#f7f9f8}
-        body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
-        main{max-width:800px;margin:0 auto;padding:20px 20px 60px}
-        .card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 1px 6px rgba(0,0,0,0.06);margin-bottom:20px}
-        .card-header{display:flex;align-items:center;justify-content:space-between;padding:18px 24px;border-bottom:1px solid var(--border);cursor:pointer;background:#fff;user-select:none}
-        .card-header-left{display:flex;align-items:center;gap:12px}
+        :root{--teal:#027368;--teal-dark:#015a52;--teal-light:#e6f4f2;--text:#1a1a1a;--muted:#555;--border:#e8e8e8;--bg:#f7f9f8}
+        body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;-webkit-text-size-adjust:100%}
+        main{max-width:800px;margin:0 auto;padding:20px 16px 48px}
+        h1{font-family:'Playfair Display',serif;font-size:24px;color:var(--teal-dark);margin:0 4px 16px}
+        .card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 1px 6px rgba(0,0,0,0.06);margin-bottom:16px}
+        .card summary{display:flex;align-items:center;gap:12px;padding:16px 20px;cursor:pointer;list-style:none;user-select:none}
+        .card summary::-webkit-details-marker{display:none}
+        .card summary:focus-visible{outline:2px solid var(--teal);outline-offset:-2px}
         .icon{width:40px;height:40px;border-radius:10px;background:var(--teal-light);display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
-        .card-header h2{font-family:'Playfair Display',serif;font-size:18px;color:var(--teal-dark)}
-        .arrow{font-size:18px;color:#999;transition:transform 0.2s}
-        .arrow.open{transform:rotate(180deg)}
-        .card-body{padding:24px;display:none}
-        .card-body.open{display:block}
-        h3{font-size:12px;font-weight:600;color:var(--text);margin:18px 0 8px;text-transform:uppercase;letter-spacing:0.06em}
+        .card h2{font-family:'Playfair Display',serif;font-size:18px;color:var(--teal-dark);flex:1}
+        .arrow{font-size:14px;color:#999;transition:transform 0.2s}
+        .card[open] .arrow{transform:rotate(180deg)}
+        .card[open] summary{border-bottom:1px solid var(--border)}
+        .card-body{padding:20px}
+        h3{font-size:12px;font-weight:600;color:var(--text);margin:20px 0 6px;text-transform:uppercase;letter-spacing:0.06em}
         h3:first-child{margin-top:0}
-        p{color:var(--muted);font-size:14.5px;margin-bottom:12px;line-height:1.8}
-        ul{list-style:none;padding:0;margin-bottom:12px}
-        ul li{padding:8px 0 8px 20px;position:relative;color:var(--muted);font-size:14.5px;border-bottom:1px solid #f5f5f5}
+        p{color:var(--muted);font-size:14.5px;margin-bottom:12px}
+        ul{list-style:none;margin-bottom:12px}
+        ul li{padding:8px 0 8px 18px;position:relative;color:var(--muted);font-size:14.5px;border-bottom:1px solid #f5f5f5}
         ul li:last-child{border-bottom:none}
-        ul li::before{content:'•';position:absolute;left:0;top:0;color:var(--teal);font-weight:bold}
-        .highlight{background:var(--teal-light);padding:12px;border-radius:6px;margin:10px 0;border-left:3px solid var(--teal)}
-        .updated{text-align:center;font-size:12px;color:#aaa;margin-top:24px}
-        footer{background:var(--teal-dark);color:rgba(255,255,255,0.6);text-align:center;padding:20px;font-size:13px}
-        footer a{color:rgba(255,255,255,0.85);text-decoration:none}
-        @media(max-width:600px){.card-body{padding:16px}}
+        ul li::before{content:'';position:absolute;left:0;top:18px;width:6px;height:6px;border-radius:50%;background:var(--teal)}
+        strong{color:var(--text);font-weight:600}
+        .highlight{background:var(--teal-light);padding:12px 14px;border-radius:8px;margin:10px 0;border-left:3px solid var(--teal);color:var(--text);font-size:14.5px}
+        a{color:var(--teal-dark)}
+        .updated{text-align:center;font-size:12px;color:#888;margin-top:24px}
+        footer{background:var(--teal-dark);color:rgba(255,255,255,0.7);text-align:center;padding:20px 16px;font-size:13px}
+        footer a{color:#fff;text-decoration:none}
     </style>
 </head>
 <body>
 <main>
+    <h1>Legal Policies</h1>
+
     <!-- Return Policy -->
-    <div class="card">
-        <div class="card-header" onclick="toggle(this)">
-            <div class="card-header-left">
-                <div class="icon">↩️</div>
-                <h2>Return Policy</h2>
-            </div>
-            <span class="arrow">▼</span>
-        </div>
+    <details class="card">
+        <summary>
+            <span class="icon" aria-hidden="true">↩️</span>
+            <h2>Return Policy</h2>
+            <span class="arrow" aria-hidden="true">▼</span>
+        </summary>
         <div class="card-body">
             <h3>Return Window</h3>
             <ul>
-                <li>Items can be returned within <strong>24 hours of delivery ONLY</strong></li>
-                <li>Return request must be initiated within 24 hours via the app</li>
-                <li><strong>After 24 hours, returns are NOT accepted</strong></li>
-                <li>Return window is strict and non-negotiable</li>
+                <li>Eligible items can be returned within <strong>3 days of delivery</strong></li>
+                <li>The return request must be raised from the app within these 3 days</li>
+                <li>After 3 days, the return option closes and returns are not accepted</li>
             </ul>
             <h3>Return Eligibility</h3>
             <ul>
-                <li>Product must be <strong>unused and in original packaging</strong></li>
+                <li>The product must be <strong>unused and in its original packaging</strong></li>
                 <li>All tags and seals must be intact</li>
-                <li>No signs of wear, damage, or use</li>
-                <li>Damaged or defective items are eligible for immediate return or replacement at no cost</li>
+                <li>No signs of wear, damage or use</li>
             </ul>
             <h3>Non-Returnable Items</h3>
             <ul>
-                <li><strong>Grocery &amp; Food Items:</strong> NO returns accepted (fruits, vegetables, dairy, packaged items, spices, snacks, beverages)</li>
-                <li>Perishable or consumable products (food, cosmetics)</li>
-                <li>Innerwear and personal-use items, for hygiene reasons</li>
-                <li>Items that have been tampered with or damaged due to customer misuse</li>
+                <li><strong>Grocery &amp; food items:</strong> fruits, vegetables, dairy, bakery, meat, beverages, packaged foods, spices and snacks</li>
+                <li>Cosmetics and personal-care products once opened</li>
+                <li>Innerwear and other personal-use items, for hygiene reasons</li>
+                <li>Items damaged through misuse after delivery</li>
             </ul>
             <div class="highlight">
-                <strong>Note:</strong> Even for non-returnable items, if you receive a wrong, damaged, expired or missing item, report it within 24 hours — replacement or refund will be arranged.
+                <strong>Wrong, damaged, expired or missing items</strong> are always covered — even for non-returnable products. Report them from the order's Help screen within <strong>24 hours of delivery</strong> and we will arrange a replacement or refund.
             </div>
-            <h3>Return Process</h3>
+            <h3>How to Return</h3>
             <ul>
-                <li>Go to <strong>My Orders</strong> → Select order → Tap <strong>Return Item</strong> (within 24 hours)</li>
-                <li>Provide reason for return</li>
-                <li>Return request must be initiated within 24 hours of delivery</li>
-                <li>Once approved, pick-up will be scheduled within 24 hours</li>
-                <li>Item must be returned in original, unused condition with all packaging intact</li>
+                <li>Open <strong>My Orders</strong> → select the order → tap <strong>Help</strong> → <strong>Return this order</strong></li>
+                <li>You'll be connected to our support team on WhatsApp with your order details</li>
+                <li>Tell us the reason for the return; once approved, we will arrange pick-up</li>
+                <li>Hand over the item unused, with all original packaging</li>
             </ul>
-            <h3>Refund Timeline</h3>
+            <h3>Refunds</h3>
             <ul>
-                <li>Return request must be initiated within <strong>24 hours</strong> of delivery</li>
-                <li>Once approved, item must be returned within <strong>24 hours</strong></li>
-                <li>Refund is processed within <strong>3–5 business days</strong> after the returned item is received and checked</li>
-                <li>Since orders are paid in cash on delivery, refunds are paid back in cash or by UPI transfer — whichever you prefer</li>
+                <li>Refunds are processed within <strong>3–5 business days</strong> after the returned item is received and checked</li>
+                <li>Since orders are paid by cash on delivery, refunds are paid in cash or by UPI transfer — whichever you prefer</li>
             </ul>
         </div>
-    </div>
+    </details>
+
     <!-- Delivery Policy -->
-    <div class="card">
-        <div class="card-header" onclick="toggle(this)">
-            <div class="card-header-left">
-                <div class="icon">🚚</div>
-                <h2>Delivery Policy</h2>
-            </div>
-            <span class="arrow">▼</span>
-        </div>
+    <details class="card">
+        <summary>
+            <span class="icon" aria-hidden="true">🚚</span>
+            <h2>Delivery Policy</h2>
+            <span class="arrow" aria-hidden="true">▼</span>
+        </summary>
         <div class="card-body">
-            <h3>Delivery Coverage &amp; Time</h3>
-            <div class="highlight">
-                <strong>TurantBuy delivers only within 1–2 km radius from our store.</strong>
-            </div>
+            <h3>Delivery Coverage</h3>
             <ul>
-                <li><strong>Average delivery time:</strong> 15 minutes</li>
-                <li><strong>Maximum delivery time:</strong> 30 minutes</li>
-                <li>Delivery times may vary based on traffic, distance, and item availability</li>
-                <li>All deliveries are within store's service radius only</li>
+                <li>Every seller on TurantBuy delivers within their own service area</li>
+                <li>The app shows only the sellers and products that can be delivered to your selected address</li>
+                <li>If no seller covers your address yet, the app will tell you</li>
             </ul>
-            <h3>Delivery Charges &amp; Platform Fees</h3>
+            <h3>Delivery Time</h3>
             <ul>
-                <li><strong>Delivery Charge:</strong> Store-specific (shown at checkout)</li>
-                <li><strong>Platform Fee:</strong> Store-specific (shown at checkout)</li>
-                <li>Free delivery offers may apply based on store promotions</li>
-                <li>All charges are clearly displayed before order confirmation</li>
+                <li>Each product shows the seller's expected delivery time before you order</li>
+                <li>Delivery times differ between sellers and may vary with traffic, weather, distance and item availability</li>
+            </ul>
+            <h3>Delivery Charges &amp; Platform Fee</h3>
+            <ul>
+                <li><strong>Delivery charge:</strong> set by each seller, and free once your order with that seller reaches their free-delivery amount</li>
+                <li><strong>Platform fee:</strong> a small flat fee for each seller in your order</li>
+                <li>If you order from more than one seller, each seller's order has its own delivery charge and platform fee</li>
+                <li>All charges are shown before you confirm the order</li>
             </ul>
             <h3>Order Tracking</h3>
             <ul>
-                <li>Real-time order status available in the <strong>My Orders</strong> section</li>
-                <li>Track order from "Placed" → "Accepted" → "Picked Up" → "Delivered"</li>
-                <li>No separate SMS/Email tracking (check app for live status)</li>
+                <li>Live order status is available in <strong>My Orders</strong></li>
+                <li>Orders move through: Placed → Accepted → Picked Up → Delivered</li>
+                <li>There are no separate SMS or email updates — please check the app</li>
             </ul>
             <h3>Delivery Address</h3>
             <ul>
-                <li>Delivery address must be within 1–2 km of the store</li>
-                <li>Ensure accurate address with complete details (building, flat no., landmarks)</li>
-                <li>Delivery boy will contact you if address is unclear</li>
+                <li>Provide a complete address (house/flat number, street, landmark) and place the pin correctly on the map</li>
+                <li>The delivery partner may call you if the address is unclear</li>
             </ul>
-            <h3>Failed Delivery Attempts</h3>
+            <h3>Failed Delivery</h3>
             <ul>
-                <li>If delivery boy cannot reach you, we will attempt redelivery</li>
-                <li>If delivery cannot be completed within 6 hours, order will be automatically cancelled</li>
-                <li>Since payment is taken only at delivery, a cancelled order costs you nothing</li>
-                <li>Contact support for manual intervention if needed</li>
+                <li>If the delivery partner cannot reach you, we will try to deliver again</li>
+                <li>If the order still cannot be delivered, our support team may cancel it</li>
+                <li>Since payment is taken only on delivery, an undelivered order costs you nothing</li>
             </ul>
         </div>
-    </div>
+    </details>
+
     <!-- Cancellation Policy -->
-    <div class="card">
-        <div class="card-header" onclick="toggle(this)">
-            <div class="card-header-left">
-                <div class="icon">❌</div>
-                <h2>Cancellation Policy</h2>
-            </div>
-            <span class="arrow">▼</span>
-        </div>
+    <details class="card">
+        <summary>
+            <span class="icon" aria-hidden="true">❌</span>
+            <h2>Cancellation Policy</h2>
+            <span class="arrow" aria-hidden="true">▼</span>
+        </summary>
         <div class="card-body">
+            <h3>When You Can Cancel</h3>
+            <ul>
+                <li>You can cancel an order yourself while it is in the <strong>Placed</strong> stage — before a delivery partner is assigned</li>
+                <li>After a delivery partner is assigned, the cancel option is no longer shown. Contact support as soon as possible and we will try to help</li>
+                <li>Once an order has been picked up for delivery, it cannot be cancelled</li>
+            </ul>
             <h3>How to Cancel</h3>
             <ul>
-                <li>Open the app → <strong>My Orders</strong></li>
-                <li>Select the order you want to cancel</li>
-                <li>Tap on <strong>Help</strong> tab → Select <strong>Cancel Order</strong></li>
-                <li>Provide reason (optional)</li>
-                <li>Confirm cancellation</li>
-            </ul>
-            <h3>When Can You Cancel?</h3>
-            <ul>
-                <li>Orders can be cancelled <strong>before delivery boy is assigned</strong></li>
-                <li>Once delivery boy is on the way, cancellation may not be possible</li>
-                <li>Contact support immediately for urgent cancellation requests</li>
+                <li>Open <strong>My Orders</strong> and select the order</li>
+                <li>Tap <strong>Help</strong> → <strong>Cancel my order</strong> and confirm</li>
             </ul>
             <h3>Refund After Cancellation</h3>
             <ul>
-                <li>All orders are Cash on Delivery, so nothing is paid upfront</li>
+                <li>All orders are cash on delivery, so nothing is paid in advance</li>
                 <li>Cancelling before delivery costs you nothing — there is no amount to refund</li>
             </ul>
-            <h3>Automatic Cancellation</h3>
+            <h3>Cancellation by TurantBuy or the Seller</h3>
             <ul>
-                <li>Orders automatically cancelled if <strong>delivery boy is not available within 6 hours</strong></li>
-                <li>You will see the cancellation in your order list in the app</li>
-                <li>No charge applies to an automatically cancelled order</li>
+                <li>An order may be cancelled if the item goes out of stock, the seller is unavailable, or the order cannot be delivered</li>
+                <li>You will see the cancellation in My Orders, and no charge applies</li>
             </ul>
         </div>
-    </div>
+    </details>
+
     <!-- Terms & Conditions -->
-    <div class="card">
-        <div class="card-header" onclick="toggle(this)">
-            <div class="card-header-left">
-                <div class="icon">📋</div>
-                <h2>Terms &amp; Conditions</h2>
-            </div>
-            <span class="arrow">▼</span>
-        </div>
+    <details class="card">
+        <summary>
+            <span class="icon" aria-hidden="true">📋</span>
+            <h2>Terms &amp; Conditions</h2>
+            <span class="arrow" aria-hidden="true">▼</span>
+        </summary>
         <div class="card-body">
             <h3>User Responsibilities</h3>
             <ul>
                 <li>You must be at least 18 years old to place an order on TurantBuy</li>
-                <li>You are responsible for maintaining account confidentiality</li>
+                <li>You are responsible for keeping your account secure</li>
                 <li>You must provide accurate information during registration and checkout</li>
                 <li>You agree to use the app for lawful purposes only</li>
             </ul>
             <h3>Intellectual Property</h3>
             <ul>
-                <li>All content (text, images, logos) is owned by TurantBuy or licensed partners</li>
+                <li>All content in the app (text, images, logos) is owned by TurantBuy or its licensed partners</li>
                 <li>Reproduction without permission is prohibited</li>
-                <li>Users grant TurantBuy license to use uploaded content</li>
+                <li>By posting reviews or other content, you allow TurantBuy to display it in the app</li>
             </ul>
             <h3>Product Accuracy</h3>
             <ul>
-                <li>We strive to display accurate product descriptions and prices</li>
-                <li>Actual product may vary slightly from images due to lighting or display</li>
-                <li>Prices are subject to change without notice</li>
+                <li>We aim to show accurate product descriptions and prices</li>
+                <li>Actual products may look slightly different from images due to lighting or screen settings</li>
+                <li>Prices and stock are set by sellers and can change; they are checked again when you place your order</li>
                 <li>We reserve the right to correct pricing errors</li>
-                <li>Product availability is subject to store inventory</li>
             </ul>
             <h3>Payment Terms</h3>
             <ul>
-                <li>All orders are <strong>Cash on Delivery</strong> — you pay the delivery person when your order arrives</li>
+                <li>All orders are <strong>cash on delivery</strong> — you pay the delivery partner when your order arrives</li>
                 <li>The total payable amount, including delivery and platform fees, is shown before you confirm the order</li>
                 <li>Please keep the exact amount ready where possible</li>
-                <li>Refusing to pay on delivery may result in your account being restricted</li>
+                <li>Refusing to pay on delivery may lead to your account being restricted</li>
             </ul>
             <h3>Prohibited Activities</h3>
             <ul>
-                <li>Using the app for fraud, hacking, or illegal activities</li>
-                <li>Posting abusive, threatening, or inappropriate content</li>
-                <li>Attempting to interfere with app functionality</li>
+                <li>Using the app for fraud, hacking or any illegal activity</li>
+                <li>Posting abusive, threatening or inappropriate content</li>
+                <li>Attempting to interfere with how the app works</li>
                 <li>Reselling items in bulk without permission</li>
-                <li>Using automated tools to scrape data</li>
+                <li>Using automated tools to collect data from the app</li>
             </ul>
         </div>
-    </div>
+    </details>
+
     <!-- Disclaimer -->
-    <div class="card">
-        <div class="card-header" onclick="toggle(this)">
-            <div class="card-header-left">
-                <div class="icon">⚠️</div>
-                <h2>Disclaimer &amp; Liability</h2>
-            </div>
-            <span class="arrow">▼</span>
-        </div>
+    <details class="card">
+        <summary>
+            <span class="icon" aria-hidden="true">⚠️</span>
+            <h2>Disclaimer &amp; Liability</h2>
+            <span class="arrow" aria-hidden="true">▼</span>
+        </summary>
         <div class="card-body">
+            <h3>TurantBuy's Role</h3>
+            <ul>
+                <li>TurantBuy is a platform that connects you with local sellers near you</li>
+                <li>Products are sold by the individual sellers listed in the app</li>
+                <li>Sellers are responsible for the quality, correctness and authenticity of their products</li>
+                <li>For any product issue, use the order's <strong>Help</strong> screen — TurantBuy will coordinate with the seller to resolve it</li>
+            </ul>
             <h3>Service Disclaimer</h3>
             <div class="highlight">
-                <strong>TurantBuy is provided "AS IS" without any warranties or guarantees.</strong>
+                TurantBuy is provided on an "as is" basis.
             </div>
             <ul>
                 <li>We do not guarantee uninterrupted or error-free service</li>
-                <li>App may have bugs or temporary outages</li>
+                <li>The app may occasionally have bugs or temporary outages</li>
                 <li>We are not responsible for technical failures beyond our control</li>
             </ul>
             <h3>Delivery Disclaimer</h3>
             <ul>
-                <li>Delivery times are approximate and subject to traffic, weather, and availability</li>
-                <li>We are not responsible for delivery delays due to factors beyond our control</li>
-                <li>Customers must provide accurate delivery address and contact number</li>
-                <li>Customers are responsible for receiving items and inspecting upon delivery</li>
-            </ul>
-            <h3>TurantBuy's Role</h3>
-            <ul>
-                <li>TurantBuy is a <strong>delivery platform</strong>, not a product seller</li>
-                <li>All products are sold directly by individual stores</li>
-                <li>TurantBuy is responsible only for timely delivery</li>
-                <li>Store is responsible for product quality, correctness, and authenticity</li>
-                <li>For product-related issues (wrong item, defects, quality), contact the store directly</li>
-                <li>TurantBuy will help facilitate communication between you and the store</li>
-            </ul>
-            <h3>Product Disclaimer</h3>
-            <ul>
-                <li><strong>Store Responsibility:</strong> All products are sourced and sold by individual stores on the TurantBuy platform</li>
-                <li>TurantBuy is not responsible for product quality, correctness, or authenticity</li>
-                <li>If you receive a <strong>wrong item, defective product, or quality issue, it is the STORE'S responsibility</strong></li>
-                <li>Report quality issues or wrong items to the store within <strong>24 hours of delivery</strong></li>
-                <li>The store will be liable for replacement or refund</li>
-                <li>TurantBuy will facilitate the complaint but the store is responsible for resolution</li>
+                <li>Delivery times are estimates and depend on traffic, weather and availability</li>
+                <li>We are not responsible for delays caused by factors beyond our control</li>
+                <li>Please provide an accurate delivery address and phone number</li>
+                <li>Please check your items when you receive them</li>
             </ul>
             <h3>Limitation of Liability</h3>
             <ul>
-                <li>TurantBuy is not liable for indirect, incidental, or consequential damages</li>
+                <li>TurantBuy is not liable for indirect, incidental or consequential damages</li>
                 <li>Our liability is limited to the amount paid for the order</li>
                 <li>We are not responsible for third-party services used to run the app</li>
             </ul>
             <h3>Force Majeure</h3>
             <ul>
-                <li>TurantBuy is not responsible for delays/cancellations due to natural disasters, extreme weather, lockdowns, strikes, or pandemics</li>
-                <li>We will make reasonable efforts to resume operations</li>
+                <li>TurantBuy is not responsible for delays or cancellations caused by natural disasters, extreme weather, lockdowns, strikes or pandemics</li>
+                <li>We will make reasonable efforts to resume service as soon as possible</li>
             </ul>
         </div>
-    </div>
+    </details>
+
     <!-- Dispute Resolution -->
-    <div class="card">
-        <div class="card-header" onclick="toggle(this)">
-            <div class="card-header-left">
-                <div class="icon">⚖️</div>
-                <h2>Dispute Resolution</h2>
-            </div>
-            <span class="arrow">▼</span>
-        </div>
+    <details class="card">
+        <summary>
+            <span class="icon" aria-hidden="true">⚖️</span>
+            <h2>Dispute Resolution</h2>
+            <span class="arrow" aria-hidden="true">▼</span>
+        </summary>
         <div class="card-body">
             <h3>Grievance Redressal</h3>
             <ul>
-                <li>Contact our support team at <strong>help.turantbuy@gmail.com</strong></li>
+                <li>Email us at <a href="mailto:help.turantbuy@gmail.com"><strong>help.turantbuy@gmail.com</strong></a> with your order ID</li>
                 <li>We will respond within <strong>24–48 hours</strong></li>
-                <li>Provide order ID for faster resolution</li>
+                <li>Phone support: <a href="tel:+918890484141"><strong>+91 88904 84141</strong></a> (9 AM – 9 PM)</li>
             </ul>
             <h3>Resolution Process</h3>
             <ul>
                 <li>We will investigate your complaint within 5–7 days</li>
-                <li>Possible outcomes: refund, replacement, or store credit</li>
-                <li>If not satisfied, you can escalate to senior management</li>
+                <li>Possible outcomes include a replacement or a refund</li>
+                <li>If you are not satisfied, you can ask for your complaint to be escalated</li>
             </ul>
             <h3>Escalation</h3>
             <ul>
-                <li>Email escalation: <strong>help.turantbuy@gmail.com</strong></li>
-                <li>Senior team will respond within 7 days</li>
-                <li>Phone support: <strong>+91-8890-484-141</strong> (9 AM – 9 PM)</li>
+                <li>Write to <a href="mailto:help.turantbuy@gmail.com">help.turantbuy@gmail.com</a> with "Escalation" in the subject</li>
+                <li>Our senior team will respond within 7 days</li>
             </ul>
             <h3>Jurisdiction</h3>
             <ul>
-                <li>These terms are governed by <strong>Indian law</strong></li>
-                <li>Disputes will be resolved under <strong>Consumer Protection Act, 2019</strong></li>
+                <li>These terms are governed by the laws of India</li>
+                <li>Consumer disputes are subject to the Consumer Protection Act, 2019</li>
                 <li>Courts in Sikar, Rajasthan have exclusive jurisdiction</li>
             </ul>
         </div>
-    </div>
-    <p class="updated">Last updated: August 2026 · help.turantbuy@gmail.com</p>
+    </details>
+
+    <p class="updated">Last updated: September 2026 · <a href="mailto:help.turantbuy@gmail.com">help.turantbuy@gmail.com</a></p>
 </main>
 <footer>© 2026 TurantBuy. All rights reserved. · <a href="mailto:help.turantbuy@gmail.com">help.turantbuy@gmail.com</a></footer>
-<script>
-    function toggle(header) {
-        const body  = header.nextElementSibling;
-        const arrow = header.querySelector('.arrow');
-        body.classList.toggle('open');
-        arrow.classList.toggle('open');
-    }
-</script>
 </body>
 </html>
